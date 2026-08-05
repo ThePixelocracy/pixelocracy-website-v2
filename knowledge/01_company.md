@@ -40,7 +40,11 @@ Together, these pillars provide an end-to-end transformation framework that conn
 
 ## Who We Work With
 
-[PLACEHOLDER]
+We partner with ambitious organizations that view technology as a strategic business capability.
+
+Our experience spans government, mobility, energy, healthcare, telecommunications, financial services, retail, insurance, FMCG and enterprise organizations, helping them navigate complex digital transformation initiatives with confidence.
+
+We work with leaders who value long-term partnerships, measurable outcomes and sustainable transformation over short-term delivery.
 
 ## How We Measure Success
 
