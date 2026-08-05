@@ -10,7 +10,11 @@ To eliminate mediocrity in technology adoption.
 
 ## Who We Are
 
-[PLACEHOLDER]
+Pixelocracy is a technology and digital transformation partner that helps organizations solve complex business challenges through strategy, AI, engineering, digital products, and organizational enablement.
+
+We combine business thinking with technical execution, allowing strategy, design, engineering, and operations to work as one integrated team.
+
+Our goal is not simply to deliver projects, but to help organizations build long-term capability and measurable business value.
 
 ## What We Believe
 
