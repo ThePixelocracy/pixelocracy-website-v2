@@ -28,7 +28,15 @@ We build for long-term outcomes, not short-term deliverables.
 
 ## What We Do
 
-[PLACEHOLDER]
+We help organizations turn business challenges into practical technology solutions through five integrated service pillars:
+
+• Strategy & Advisory
+• Data, AI & Automation
+• Engineering & Security
+• Digital Products
+• Capability Building & Operations
+
+Together, these pillars provide an end-to-end transformation framework that connects strategy, technology, products, people, and long-term operational capability.
 
 ## Who We Work With
 
