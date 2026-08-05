@@ -48,7 +48,19 @@ We work with leaders who value long-term partnerships, measurable outcomes and s
 
 ## How We Measure Success
 
-[PLACEHOLDER]
+We measure success by the impact we create, not by project completion.
+
+Success means:
+
+• Better business outcomes
+• Higher operational efficiency
+• Greater user adoption
+• Faster decision making
+• Stronger internal capability
+• Secure and maintainable technology
+• Long-term value creation
+
+Our objective is to leave every organization stronger than we found it, enabling teams to continue evolving independently after our engagement.
 
 ## Core Principles
 
