@@ -87,27 +87,43 @@ Decision intelligence, not just analytics. We don't simply show the data. We aut
 
 ### Overview
 
-[PLACEHOLDER]
+Enterprise software and infrastructure is hard. We build secure, scalable and maintainable technology foundations that help organizations move faster with confidence.
 
 ### What's Included
 
-[PLACEHOLDER]
+- Cloud-Native Architecture & Infrastructure
+- Platform Development & Systems Integration
+- Legacy Modernization & Migrations
+- DevOps & CI/CD Engineering
+- Security by Design
+- Developer Experience, Training & Recruiting
+- Cost Optimization, Performance, Reliability & Observability
+- Quality Assurance Infrastructure
 
 ### Value Propositions
 
-[PLACEHOLDER]
+- Bespoke engineering with turnkey delivery experience.
+- Security and compliance are built into every decision from day one.
+- CI/CD, automated testing, monitoring and deployment are part of the solution.
+- We build internal capability so your team owns the platform.
 
 ### Client Pains
 
-[PLACEHOLDER]
+- "We need to scale without burning our infrastructure budget."
+- "We need to launch in four months and don't have the team."
+- "Every vendor tells us something different."
+- "We don't know whether to build, buy or adopt a hybrid approach."
+- "Every SaaS solution gets us only 70% of the way."
+- "We need a partner that builds with us, not just for us."
 
 ### Proof Points
 
-[PLACEHOLDER]
+- Telco: 3x faster releases with zero downtime through consolidated engineering operations.
+- eGovernance: Zero-trust architecture delivering 80% fewer manual security checks and zero breaches over two years.
 
 ### Key Differentiator
 
-[PLACEHOLDER]
+Security is a speed multiplier, not a friction point. Strong engineering foundations allow teams to move faster with confidence.
 
 ---
 
