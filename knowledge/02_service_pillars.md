@@ -131,27 +131,41 @@ Security is a speed multiplier, not a friction point. Strong engineering foundat
 
 ### Overview
 
-[PLACEHOLDER]
+We design, build and continuously improve digital products that create measurable business value. From strategy and UX to development and optimization, we help organizations and agency partners bring better digital products to market.
 
 ### What's Included
 
-[PLACEHOLDER]
+- Product Strategy & Discovery
+- User Research & UX/UI Design
+- Design Systems & Prototyping
+- Digital Product Development
+- Customer Portals & Internal Platforms
+- Product Optimization & A/B Testing
+- SaaS Products & Operations
+- Product Support & Continuous Improvement
 
 ### Value Propositions
 
-[PLACEHOLDER]
+- Products shaped by real users, not assumptions.
+- Design and engineering speak the same language. No design-development handoff friction.
+- Products people enjoy using. Higher adoption. Lower support costs. Better business outcomes.
+- Great products become competitive advantages. In crowded markets, experience makes the difference.
 
 ### Client Pains
 
-[PLACEHOLDER]
+- "We need people who become part of the team, not another disconnected expert."
+- "We built it technically sound. No one uses it. Support tickets are through the roof."
+- "Our product feels dated. Competitors moved on."
+- "We redesign every year. Nothing sticks. Design and engineering have different ideas of done."
 
 ### Proof Points
 
-[PLACEHOLDER]
+- Gov.gr citizen portal: 9 million users, consolidation of more than 2,000 public services, more than €400 million annual savings.
+- Health Group: Employee platform adopted by 95% of users during the first month, over one million transactions, and 50% reduction in operational effort.
 
 ### Key Differentiator
 
-[PLACEHOLDER]
+Complexity made simple. World-class engineering under the hood. One team delivering from concept to measurable business value.
 
 ---
 
