@@ -173,24 +173,37 @@ Complexity made simple. World-class engineering under the hood. One team deliver
 
 ### Overview
 
-[PLACEHOLDER]
+Transformation is temporary unless your team owns it. We hire, train, embed and build capability. Then we step back and your team runs with confidence.
 
 ### What's Included
 
-[PLACEHOLDER]
+- Team Training & Skill Transfer
+- Knowledge Documentation & Handoff
+- Operations & Performance Optimization
+- Organizational Design & Team Structure
+- Hiring & Team Building
+- Operational Governance & Change Management
+- PMO & Delivery Management Services
 
 ### Value Propositions
 
-[PLACEHOLDER]
+- Your team is the asset. We build capability, not dependency.
+- Transformation that outlasts the project.
+- People feel equipped, not buried. Training that sticks, processes that make sense and tools that empower.
 
 ### Client Pains
 
-[PLACEHOLDER]
+- "We digitized the process but every change now requires expensive consultants."
+- "The transformation was great. Then the consultants left and everything slowed down."
+- "Our team doesn't know how to operate the systems."
+- "One key person leaves and everything breaks."
+- "We want to bring everything in-house but need help accelerating hiring and team maturity."
 
 ### Proof Points
 
-[PLACEHOLDER]
+- Mobility company: Internal IT team fully operational with zero yearly escalations.
+- Energy utility: AI forecasting capability still operated internally by the client's team more than two years after delivery.
 
 ### Key Differentiator
 
-[PLACEHOLDER]
+We succeed when clients no longer depend on us. Our KPI is your independence, not our billable hours.
