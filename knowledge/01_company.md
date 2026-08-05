@@ -6,7 +6,7 @@ To help ambitious organizations turn business challenges into practical technolo
 
 ## Vision
 
-[PLACEHOLDER]
+To eliminate mediocrity in technology adoption.
 
 ## Who We Are
 
