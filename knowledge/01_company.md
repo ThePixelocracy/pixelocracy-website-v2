@@ -64,4 +64,13 @@ Our objective is to leave every organization stronger than we found it, enabling
 
 ## Core Principles
 
-[PLACEHOLDER]
+• Business outcomes before technology
+• Strategy must lead to execution
+• AI should solve practical business problems
+• Design and engineering work as one integrated team
+• Security is built in from the beginning
+• Build capability, not dependency
+• Deliver practical, production-ready solutions
+• Simplicity beats unnecessary complexity
+• Measure success through real-world adoption and business value
+• Leave every organization stronger than we found it
