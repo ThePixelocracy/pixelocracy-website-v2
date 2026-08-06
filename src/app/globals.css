@@ -8,13 +8,15 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
   --font-display: var(--font-display);
   --font-heading: var(--font-display);
+  --font-cta: var(--font-cta);
   --color-navy: var(--navy);
   --color-navy-foreground: var(--navy-foreground);
   --color-lavender: var(--lavender);
   --color-lavender-foreground: var(--lavender-foreground);
+  --color-pill: var(--pill);
+  --color-pill-foreground: var(--pill-foreground);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -66,6 +68,8 @@
   --navy-foreground: oklch(0.985 0 0);
   --lavender: #e8ecfd;
   --lavender-foreground: #000000;
+  --pill: #dae1fc;
+  --pill-foreground: #000826;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);

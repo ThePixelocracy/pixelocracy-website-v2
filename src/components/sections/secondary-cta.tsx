@@ -18,10 +18,11 @@ export function SecondaryCTA({
       variant="outline"
       size={size}
       className={cn(
-        "border-primary bg-transparent text-primary hover:bg-primary/5 dark:border-primary dark:bg-transparent",
+        "rounded-none border-primary bg-transparent text-primary hover:bg-primary/5 dark:border-primary dark:bg-transparent",
         className
       )}
       render={href ? <Link href={href} /> : undefined}
+      nativeButton={!href}
       {...props}
     >
       {children}

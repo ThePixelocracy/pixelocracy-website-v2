@@ -1,7 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 import { LinkedinIcon } from "@/components/icons/linkedin-icon";
 import { siteConfig } from "@/lib/site-config";
 import { BackToTop } from "@/components/layout/back-to-top";
+import { WaveDivider } from "@/components/sections/wave-divider";
 
 const footerLinks = [
   { name: "Expertise", href: "/services" },
@@ -14,26 +16,19 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="relative bg-lavender">
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 1440 60"
-        preserveAspectRatio="none"
-        className="absolute top-0 -mt-px h-10 w-full text-lavender"
-      >
-        <path
-          fill="currentColor"
-          d="M0,32 C240,64 480,0 720,16 C960,32 1200,64 1440,32 L1440,60 L0,60 Z"
-        />
-      </svg>
+      <WaveDivider variant="solid" className="absolute top-0 -mt-px" />
 
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-10 sm:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
           <div className="flex flex-col gap-3">
-            <Link
-              href="/"
-              className="font-display text-xl font-extrabold tracking-tight text-primary uppercase"
-            >
-              Pixelocracy
+            <Link href="/" aria-label="Pixelocracy home">
+              <Image
+                src="/brand/pix-logo-800.png"
+                alt="Pixelocracy"
+                width={800}
+                height={84}
+                className="h-5 w-auto"
+              />
             </Link>
             <p className="max-w-xs text-sm text-muted-foreground">
               We transform the industries of the present, with the technologies of the future

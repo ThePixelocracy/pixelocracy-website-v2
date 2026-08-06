@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Geist_Mono, Montserrat, Poppins } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import { siteConfig } from "@/lib/site-config";
 import { Navigation } from "@/components/layout/navigation";
 import { Footer } from "@/components/layout/footer";
@@ -12,17 +13,33 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const sharpGrotesk = localFont({
+  variable: "--font-display",
   display: "swap",
+  src: [
+    {
+      path: "../fonts/sharp-grotesk/SharpGrotesk-Medium25.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/sharp-grotesk/SharpGrotesk-MediumItalic20.otf",
+      weight: "500",
+      style: "italic",
+    },
+  ],
 });
 
-const poppins = Poppins({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
+const mabryPro = localFont({
+  variable: "--font-cta",
   display: "swap",
+  src: [
+    {
+      path: "../fonts/mabry-pro/MabryPro-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -101,7 +118,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${montserrat.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
+        className={`${montserrat.variable} ${sharpGrotesk.variable} ${mabryPro.variable} antialiased`}
       >
         <Navigation />
         {children}

@@ -25,28 +25,28 @@ export function Hero({
   return (
     <section
       className={cn(
-        "bg-gradient-to-b from-lavender to-background px-6 py-20 sm:px-8 sm:py-28",
+        "bg-gradient-to-b from-lavender to-background px-6 py-14 sm:px-8 sm:py-20",
         className
       )}
     >
       <div
         className={cn(
-          "mx-auto flex max-w-3xl flex-col gap-6",
+          "mx-auto flex max-w-3xl flex-col",
           isCentered ? "items-center text-center" : "items-start text-left"
         )}
       >
         {eyebrow ? (
-          <span className="text-xs font-bold tracking-wide text-primary uppercase">
+          <span className="font-display mb-3 text-[15px] leading-5 font-medium tracking-wide text-primary uppercase">
             {eyebrow}
           </span>
         ) : null}
-        <Heading className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+        <Heading className="font-display text-[30px] leading-[38px] font-medium text-foreground sm:text-[48px] sm:leading-[48px]">
           {heading}
         </Heading>
         {description ? (
           <p
             className={cn(
-              "text-base text-muted-foreground sm:text-lg",
+              "mt-[50px] text-[20px] leading-[26px] text-foreground sm:text-[24px] sm:leading-[30px]",
               isCentered && "max-w-xl"
             )}
           >
@@ -56,7 +56,7 @@ export function Hero({
         {actions ? (
           <div
             className={cn(
-              "flex flex-col gap-3 pt-2 sm:flex-row",
+              "mt-9 flex flex-col gap-3 sm:flex-row",
               isCentered && "items-center justify-center"
             )}
           >

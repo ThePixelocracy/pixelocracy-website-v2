@@ -29,17 +29,17 @@ export function SectionHeader({
       )}
     >
       {eyebrow ? (
-        <span className="text-xs font-bold tracking-wide text-primary uppercase">
+        <span className="font-display text-[15px] leading-5 font-medium tracking-wide text-primary uppercase">
           {eyebrow}
         </span>
       ) : null}
-      <Heading className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+      <Heading className="text-[28px] leading-[34px] font-bold text-foreground sm:text-[40px] sm:leading-[48px]">
         {heading}
       </Heading>
       {description ? (
         <p
           className={cn(
-            "text-base text-muted-foreground sm:text-lg",
+            "text-base text-foreground sm:text-lg",
             isCentered && "max-w-2xl"
           )}
         >

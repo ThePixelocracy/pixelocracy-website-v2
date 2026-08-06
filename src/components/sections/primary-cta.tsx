@@ -4,13 +4,11 @@ import { cn } from "@/lib/utils";
 
 type PrimaryCTAProps = React.ComponentProps<typeof Button> & {
   href?: string;
-  accentTab?: boolean;
 };
 
 export function PrimaryCTA({
   href,
   size = "lg",
-  accentTab,
   className,
   children,
   ...props
@@ -18,16 +16,15 @@ export function PrimaryCTA({
   return (
     <Button
       size={size}
-      className={cn(accentTab && "relative ml-1", className)}
+      variant="ghost"
+      className={cn(
+        "h-auto rounded-none bg-background px-8 py-5 text-base leading-6 font-normal text-foreground shadow-[6px_6px_0_0_#4467f6]",
+        className
+      )}
       render={href ? <Link href={href} /> : undefined}
+      nativeButton={!href}
       {...props}
     >
-      {accentTab ? (
-        <span
-          aria-hidden="true"
-          className="absolute top-0.5 bottom-0.5 -left-1 w-1 rounded-full bg-primary"
-        />
-      ) : null}
       {children}
     </Button>
   );
