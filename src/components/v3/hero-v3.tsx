@@ -1,5 +1,5 @@
 import { NotchButton } from "@/components/v3/notch-button";
-import { ResolveField } from "@/components/v3/resolve-field";
+import { HeroKeyVisual } from "@/components/v3/hero-key-visual";
 
 const wayfind = [
   { id: "capabilities", label: "Capabilities" },
@@ -41,8 +41,8 @@ export function HeroV3() {
       </div>
 
       <div className="relative mt-14 sm:mt-20">
-        <div className="flex h-[220px] flex-col bg-background sm:h-[300px] lg:h-[360px]">
-          <ResolveField rows={6} cols={32} className="min-h-0 flex-1 px-4 pt-4 sm:px-8 sm:pt-6" />
+        <div className="flex h-[260px] flex-col bg-background sm:h-[340px] lg:h-[420px]">
+          <HeroKeyVisual className="min-h-0 flex-1 px-4 pt-4 sm:px-8 sm:pt-6" />
 
           <div className="shrink-0 px-4 pt-3 sm:px-8">
             <div className="relative h-px w-full bg-border">
