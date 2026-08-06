@@ -51,6 +51,15 @@ The approved sources of truth are:
 
 Nothing outside these two locations overrides them. If a request conflicts with what is documented in `/knowledge` or shown in `/design`, the request should be questioned, not the source of truth.
 
+## Design Documentation Priority
+
+1. The canonical implementation authority is: `knowledge/07_pixelocracy_implementation_spec.md`
+2. `knowledge/06_figma_design_system.md` is a supporting reference only.
+3. If `knowledge/06_figma_design_system.md` conflicts with `knowledge/07_pixelocracy_implementation_spec.md`, always follow `knowledge/07_pixelocracy_implementation_spec.md`.
+4. Do not combine conflicting values from both documents.
+5. Use `knowledge/06_figma_design_system.md` only when the relevant value is not covered in `knowledge/07_pixelocracy_implementation_spec.md`.
+6. If both documents are silent or ambiguous, stop and ask before implementing.
+
 ## Rules
 
 - Do not use assumptions.
