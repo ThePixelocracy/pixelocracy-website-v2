@@ -11,12 +11,15 @@ type PillarRouteParams = {
 // Excluded — each now has its own static route (src/app/services/<slug>/
 // page.tsx), which takes routing precedence over this dynamic segment.
 // Generating them here too would conflict with those static routes at
-// build time.
+// build time. All five pillars now have static routes, so this dynamic
+// segment currently has no slug left to serve — kept in place as the
+// fallback template, not deleted.
 const V4_PILLAR_SLUGS = new Set([
   "strategy-advisory",
   "data-ai-automation",
   "engineering-security",
   "digital-products",
+  "capability-building-operations",
 ]);
 
 export function generateStaticParams(): PillarRouteParams[] {

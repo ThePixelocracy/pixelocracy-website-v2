@@ -567,6 +567,10 @@ export const pillarPages: Record<string, PillarPageContent> = {
           quote: "We hired a team but they don't know how to operate the systems. We're back to manual processes.",
         },
         { quote: "Change happens but it's fragile. One key person quits and everything breaks." },
+        {
+          quote:
+            "We want to bring all activities in-house but we need to accelerate hiring, structure and team management.",
+        },
       ],
     },
     experience: {
