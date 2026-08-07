@@ -47,10 +47,11 @@ function WorkItem({ caseStudy, index, total }: WorkItemProps) {
     >
       <motion.div style={!reducedMotion ? { y: parallaxY } : undefined} className="absolute inset-[-8%]">
         <Image
-          src={caseStudy.image}
+          src={caseStudy.imageV4 ?? caseStudy.image}
           alt={caseStudy.title}
           fill
           sizes="100vw"
+          style={{ objectPosition: caseStudy.imagePositionV4 ?? "center" }}
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
       </motion.div>

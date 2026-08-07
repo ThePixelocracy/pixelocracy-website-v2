@@ -193,10 +193,11 @@ export function NavigationV4() {
                       >
                         <div className="relative h-16 w-24 shrink-0 overflow-hidden">
                           <Image
-                            src={caseStudy.image}
+                            src={caseStudy.imageV4 ?? caseStudy.image}
                             alt={caseStudy.title}
                             fill
                             sizes="96px"
+                            style={{ objectPosition: caseStudy.imagePositionV4 ?? "center" }}
                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                           />
                         </div>
