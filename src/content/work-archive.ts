@@ -86,6 +86,11 @@ const PILLARS_BY_SLUG: Record<string, string[]> = {
   govgr: ["Strategy & Advisory", "Digital Products", "Engineering & Security"],
 };
 
+// Only set once an individual case-study route is actually built.
+const ROUTE_BY_SLUG: Record<string, string> = {
+  govgr: "/work/govgr",
+};
+
 export const archiveProjects: ArchiveProject[] = [
   ...caseStudies.map((caseStudy) => ({
     slug: caseStudy.slug,
@@ -95,6 +100,7 @@ export const archiveProjects: ArchiveProject[] = [
     imagePosition: caseStudy.imagePositionV4,
     industry: INDUSTRY_BY_SLUG[caseStudy.slug] ?? "",
     pillars: PILLARS_BY_SLUG[caseStudy.slug],
+    route: ROUTE_BY_SLUG[caseStudy.slug],
   })),
   ...additionalProjects,
 ];
