@@ -90,6 +90,7 @@ const PILLARS_BY_SLUG: Record<string, string[]> = {
 const ROUTE_BY_SLUG: Record<string, string> = {
   govgr: "/work/govgr",
   "wired-greece": "/work/wired-greece",
+  "apeiron-ventures": "/work/apeiron-ventures",
 };
 
 export const archiveProjects: ArchiveProject[] = [

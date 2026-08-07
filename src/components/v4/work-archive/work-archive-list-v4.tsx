@@ -18,9 +18,8 @@ import { archiveProjects, type ArchiveProject } from "@/content/work-archive";
  * project gets a standard, still-asymmetric row. No card borders, no
  * rounded corners, no equal-height grid.
  *
- * Only a project with `route` set (currently just Cardom, at /work/cardom)
- * renders a "View case study" link — no individual case-study route
- * exists yet for the other five, so those rows stay exactly as before,
+ * Only a project with `route` set renders a "View case study" link — a
+ * project with no built case-study route stays exactly as before,
  * unlinked, rather than pointing at a page that isn't there.
  */
 export function WorkArchiveListV4() {
