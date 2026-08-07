@@ -14,15 +14,17 @@ const V4_ROUTES = new Set([
   "/services/engineering-security",
   "/services/digital-products",
   "/services/capability-building-operations",
+  "/about",
 ]);
 
 /**
  * Routes the site-wide header. The approved V4 homepage was promoted from
  * /v4 to the real homepage at / — so / now gets <NavigationV4/>. All five
  * V4 pillar pages (Strategy & Advisory, Data AI & Automation, Engineering
- * & Security, Digital Products & UI/UX, Capability Building) join it here.
- * Every other existing route (V2, V3) keeps the exact same <Navigation/>
- * as before; this is additive, not a redesign of those pages.
+ * & Security, Digital Products & UI/UX, Capability Building) and the new
+ * About page join it here. Every other existing route (V2, V3) keeps the
+ * exact same <Navigation/> as before; this is additive, not a redesign of
+ * those pages.
  */
 export function SiteHeader() {
   const pathname = usePathname();
