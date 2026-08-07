@@ -89,6 +89,7 @@ const PILLARS_BY_SLUG: Record<string, string[]> = {
 // Only set once an individual case-study route is actually built.
 const ROUTE_BY_SLUG: Record<string, string> = {
   govgr: "/work/govgr",
+  "wired-greece": "/work/wired-greece",
 };
 
 export const archiveProjects: ArchiveProject[] = [

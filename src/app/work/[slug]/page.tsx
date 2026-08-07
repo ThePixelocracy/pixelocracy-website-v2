@@ -8,6 +8,8 @@ import { AegeanPageV4 } from "@/components/v4/case-study/aegean-page-v4";
 import { aegeanCaseStudy } from "@/content/aegean-case-study";
 import { GovgrPageV4 } from "@/components/v4/case-study/govgr-page-v4";
 import { govgrCaseStudy } from "@/content/govgr-case-study";
+import { WiredPageV4 } from "@/components/v4/case-study/wired-page-v4";
+import { wiredCaseStudy } from "@/content/wired-case-study";
 
 type CaseStudyRouteParams = {
   slug: string;
@@ -15,9 +17,8 @@ type CaseStudyRouteParams = {
 
 // Each built case study gets an entry here — content + hero copy for
 // metadata, and the page component to render. Any slug not listed
-// (wired-greece, apeiron-ventures) 404s honestly rather than rendering a
-// stub — neither route is linked from anywhere in the site yet (see
-// `work-archive.ts`).
+// (apeiron-ventures) 404s honestly rather than rendering a stub — that
+// route isn't linked from anywhere in the site yet (see `work-archive.ts`).
 const CASE_STUDIES = {
   [cardomCaseStudy.slug]: {
     title: cardomCaseStudy.hero.title,
@@ -38,6 +39,11 @@ const CASE_STUDIES = {
     title: govgrCaseStudy.hero.title,
     description: govgrCaseStudy.hero.subheading,
     Page: GovgrPageV4,
+  },
+  [wiredCaseStudy.slug]: {
+    title: wiredCaseStudy.hero.title,
+    description: wiredCaseStudy.hero.subheading,
+    Page: WiredPageV4,
   },
 } as const;
 
