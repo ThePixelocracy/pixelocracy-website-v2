@@ -368,6 +368,14 @@ export const pillarPages: Record<string, PillarPageContent> = {
           quote:
             "We don't know if we should build it ourselves, buy a product, or find a hybrid. Nobody's helping us think that through.",
         },
+        {
+          quote:
+            "We need something custom. Every SaaS tool we've tried gets us 70% of the way there and then stops.",
+        },
+        {
+          quote:
+            "We're a non-tech company entering a digital product space. We need a partner who builds with us, not just for us.",
+        },
       ],
     },
     experience: {
