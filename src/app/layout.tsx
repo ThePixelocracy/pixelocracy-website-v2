@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
 import localFont from "next/font/local";
 import { siteConfig } from "@/lib/site-config";
-import { Navigation } from "@/components/layout/navigation";
+import { SiteHeader } from "@/components/layout/site-header";
 import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 
@@ -120,7 +120,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${sharpGrotesk.variable} ${mabryPro.variable} antialiased`}
       >
-        <Navigation />
+        <SiteHeader />
         {children}
         <Footer />
       </body>

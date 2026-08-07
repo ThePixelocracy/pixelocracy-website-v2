@@ -56,10 +56,30 @@ export function Footer() {
             </Link>
           </nav>
 
-          <div className="text-sm text-muted-foreground">
-            <p>Certified Information Security Management System</p>
-            <p>EN ISO/IEC 27001:2023</p>
-            <p>Certified by EUROCERT</p>
+          <div className="flex flex-col gap-3">
+            <Image
+              src="/eurocertISO/eurocert1.png"
+              alt="Certified Information Security Management System, EN ISO/IEC 27001:2023, Certified by EUROCERT"
+              width={445}
+              height={61}
+              className="h-10 w-auto"
+            />
+            <div className="flex items-center gap-3">
+              <Image
+                src="/eurocertISO/eurocert2.png"
+                alt="EUROCERT certified management system badge, ISO 15.011"
+                width={100}
+                height={48}
+                className="h-10 w-auto"
+              />
+              <Image
+                src="/eurocertISO/eurocert3.png"
+                alt="EUROCERT certified management system badge, ISO 12.1246"
+                width={100}
+                height={49}
+                className="h-10 w-auto"
+              />
+            </div>
           </div>
         </div>
 

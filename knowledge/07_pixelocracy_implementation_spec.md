@@ -1,6 +1,8 @@
 # Pixelocracy Website — Complete Implementation Handoff Specification
 
-**Source:** Figma file "PIX Website" (fileKey `Ya8WfjI58jnFDHpEgXzM55`), canvas `231:2` ("FInal Mockups"). This document covers every approved page and its corresponding Mobile frame, plus a shared-components section synthesized from patterns that recur across pages.
+> **⚠️ Content/IA reference only for pages not yet rebuilt — visual/component decisions superseded by V4.** This document factually records the **pre-V4** reference designs (Homepage, About, Contact, Blog/Insights, Pillar Page Template, Case Studies Archive, Wired/Cardom/Apeiron case studies, Mini Landing). It contains real, usable **copy** in places (e.g. About's actual heading/paragraph text) — use that copy where it's genuine approved content. Do **not** carry over its layout, card constructions, wavy dividers, hard-shadow buttons, or nav/footer treatment into any new V4 page. Current visual, typography, motion, and component authority is **[`knowledge/08_v4_design_system.md`](./08_v4_design_system.md)**, which also lists a recommended page-implementation order in its §9.
+>
+> **Source:** Figma file "PIX Website" (fileKey `Ya8WfjI58jnFDHpEgXzM55`), canvas `231:2` ("FInal Mockups"). This document covers every approved page and its corresponding Mobile frame, plus a shared-components section synthesized from patterns that recur across pages.
 
 **Methodology and ground rules applied throughout this document:**
 

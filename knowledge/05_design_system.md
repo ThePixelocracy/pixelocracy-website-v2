@@ -1,5 +1,9 @@
 # Design System
 
+> **⚠️ LEGACY — visual/component decisions superseded by V4.** This document describes the **pre-V4** direction (wavy dividers, hard-shadow `6px 6px 0px` cards/buttons, the "Overlay+Border+OverlayBlur" card construction, gradient CTA bands, rounded-mask + wave-scallop photography, a conventional top nav). None of that should be used as visual reference for any new page. The current visual, typography, motion, and component authority is **[`knowledge/08_v4_design_system.md`](./08_v4_design_system.md)**, extracted from the approved, locked V4 homepage.
+>
+> This document remains valid for **content and information architecture** on pages not yet rebuilt in V4 (what sections exist on About/Contact/Blog/Case-studies, what order they're in, what real copy was approved) — see `08`'s §9 for the full breakdown.
+
 Reverse-engineered from the approved reference designs in `/design`. These are the single source of truth: Homepage, About, Contact, Case Studies Archive, Blog (single article template), Pillar Page Template, and three case studies (Apeiron Ventures, Cardom, Wired Greece — including Wired's pre-update draft, superseded by "UPDATED Wired Case Study").
 
 Where a pattern is not visible in the approved designs, this document says so explicitly rather than inventing one.

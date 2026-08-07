@@ -1,5 +1,7 @@
 # Pixelocracy Website — Canonical Design Specification
 
+> **⚠️ Supporting reference only, superseded by V4 for visual decisions.** This is a raw Figma measurement dump for the **pre-V4** reference designs. Current visual, typography, motion, and component authority is **[`knowledge/08_v4_design_system.md`](./08_v4_design_system.md)**. Use this document only for historical values (e.g. confirming the brand blue `#4467F6` or the original type families) that `08` doesn't already restate, never as layout/component direction for a new page.
+
 Source: Figma file "PIX Website" (`Ya8WfjI58jnFDHpEgXzM55`), page "FInal Mockups" (node `231:2`), plus page "Cover" (node `0:1`).
 
 Nodes directly reviewed: `231:1585` (Blog - Desktop), `343:162` reference only via sitemap listing (Blog - Mobile, not opened), `231:40` (NEW Homepage - Desktop), `257:1388` (NEW Homepage - Mobile), `231:963` (Contact - Desktop), and sub-nodes within these frames listed by ID throughout this document.

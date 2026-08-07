@@ -1,5 +1,7 @@
 # Design Principles
 
+*High-level philosophy, unaffected by the V3→V4 transition. For current concrete visual/typography/motion/component specifics, see [`knowledge/08_v4_design_system.md`](./08_v4_design_system.md).*
+
 ## Design Philosophy
 
 Design exists to solve business problems.

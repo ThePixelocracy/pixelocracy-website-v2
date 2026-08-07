@@ -53,12 +53,14 @@ Nothing outside these two locations overrides them. If a request conflicts with 
 
 ## Design Documentation Priority
 
-1. The canonical implementation authority is: `knowledge/07_pixelocracy_implementation_spec.md`
-2. `knowledge/06_figma_design_system.md` is a supporting reference only.
-3. If `knowledge/06_figma_design_system.md` conflicts with `knowledge/07_pixelocracy_implementation_spec.md`, always follow `knowledge/07_pixelocracy_implementation_spec.md`.
-4. Do not combine conflicting values from both documents.
-5. Use `knowledge/06_figma_design_system.md` only when the relevant value is not covered in `knowledge/07_pixelocracy_implementation_spec.md`.
-6. If both documents are silent or ambiguous, stop and ask before implementing.
+**V4 is approved and locked as the current visual, interaction, and motion direction for the whole site.** For anything touching visual design, typography, motion, responsive behaviour, or component architecture:
+
+1. The canonical authority is: `knowledge/08_v4_design_system.md` — extracted directly from the approved, locked V4 implementation (`src/app/v4/` and `src/components/v4/`). Where code and this document disagree, the code is right; fix the document.
+2. `knowledge/07_pixelocracy_implementation_spec.md` and `knowledge/05_design_system.md` are **legacy for visual/component decisions** — they describe the pre-V4 direction (wavy dividers, hard-shadow cards/buttons, rounded-mask photography, gradient CTA bands, a conventional top nav) and must not be used as visual reference for any new page. They remain valid for **content and information architecture** on pages not yet rebuilt in V4 (what sections exist, what order, what real copy was approved) — see `08_v4_design_system.md` §9 for the full breakdown of what's still usable versus deprecated per document.
+3. `knowledge/06_figma_design_system.md` remains a supporting reference only, scoped the same way as `07` above: useful for historical raw measurements, superseded by `08` for any value the two disagree on.
+4. `knowledge/01_company.md`, `02_service_pillars.md`, `03_tone_of_voice.md`, and `04_design_principles.md` are unaffected by the V3→V4 transition — they are content and philosophy documents, not visual specifications, and remain fully authoritative.
+5. The `/design` reference screenshots are **information-architecture and content reference only** — they show what sections/pages exist and what narrative each case study follows, never the visual direction to replicate. The approved V4 implementation defines the visual, interaction, and motion language, not these screenshots.
+6. If a document is silent or ambiguous on something a new page needs, stop and ask rather than improvising — and treat the gap as something to add to `08_v4_design_system.md` once resolved.
 
 ## Rules
 
