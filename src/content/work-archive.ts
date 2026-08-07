@@ -72,6 +72,7 @@ const additionalProjects: ArchiveProject[] = [
       "A digital platform for the Aegean Motorway delivering real-time traffic updates, live alerts, and reliable information for thousands of daily commuters.",
     image: "/case-studies/aegean-mootorways-thumbnail.png",
     industry: "Mobility",
+    route: "/work/aegean-motorway",
   },
 ];
 
