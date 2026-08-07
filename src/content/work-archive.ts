@@ -42,6 +42,8 @@ export type ArchiveProject = {
   industry: string;
   /** Only set where independently cross-referenced elsewhere in approved content. */
   pillars?: string[];
+  /** Only set once an individual case-study route is actually built — never a slug without a page. */
+  route?: string;
 };
 
 const additionalProjects: ArchiveProject[] = [
@@ -52,6 +54,7 @@ const additionalProjects: ArchiveProject[] = [
       "A fully digital marketplace for certified used cars — transparent vehicle history, secure checkout, and door-to-door delivery across Greece.",
     image: "/case-studies/cardom-thumbnail.png",
     industry: "Automotive",
+    route: "/work/cardom",
   },
   {
     slug: "hhg",

@@ -30,5 +30,6 @@ const V4_ROUTES = new Set([
  */
 export function SiteHeader() {
   const pathname = usePathname();
-  return pathname && V4_ROUTES.has(pathname) ? <NavigationV4 /> : <Navigation />;
+  const isV4Route = Boolean(pathname) && (V4_ROUTES.has(pathname!) || pathname!.startsWith("/work/"));
+  return isV4Route ? <NavigationV4 /> : <Navigation />;
 }

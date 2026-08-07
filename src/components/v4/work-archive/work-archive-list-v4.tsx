@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { archiveProjects, type ArchiveProject } from "@/content/work-archive";
 
@@ -17,9 +18,10 @@ import { archiveProjects, type ArchiveProject } from "@/content/work-archive";
  * project gets a standard, still-asymmetric row. No card borders, no
  * rounded corners, no equal-height grid.
  *
- * No project links anywhere — no individual case-study route exists yet
- * for any of the six, so none are presented as a link to a page that
- * isn't there.
+ * Only a project with `route` set (currently just Cardom, at /work/cardom)
+ * renders a "View case study" link — no individual case-study route
+ * exists yet for the other five, so those rows stay exactly as before,
+ * unlinked, rather than pointing at a page that isn't there.
  */
 export function WorkArchiveListV4() {
   const prefersReducedMotion = useReducedMotion();
@@ -107,6 +109,17 @@ function ProjectRow({
               </span>
             ))}
           </div>
+        )}
+        {project.route && (
+          <Link
+            href={project.route}
+            className="group font-cta mt-2 inline-flex w-fit items-center gap-2 text-sm font-medium text-primary"
+          >
+            View case study
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1.5">
+              →
+            </span>
+          </Link>
         )}
       </motion.div>
     </div>

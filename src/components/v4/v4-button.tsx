@@ -7,6 +7,8 @@ type V4ButtonProps = {
   children: ReactNode;
   variant?: "primary" | "secondary" | "invert";
   className?: string;
+  /** For links to a client's own live product, outside the site. */
+  external?: boolean;
 };
 
 /**
@@ -14,7 +16,7 @@ type V4ButtonProps = {
  * signature shape — the "wow" here is motion (the arrow slides on hover),
  * not geometry. Deliberately distinct from V3's notch system.
  */
-export function V4Button({ href, children, variant = "primary", className }: V4ButtonProps) {
+export function V4Button({ href, children, variant = "primary", className, external = false }: V4ButtonProps) {
   const surface =
     variant === "primary"
       ? "bg-primary text-white"
@@ -25,6 +27,7 @@ export function V4Button({ href, children, variant = "primary", className }: V4B
   return (
     <Link
       href={href}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={cn(
         "group font-cta inline-flex items-center gap-3 px-8 py-4 text-base font-medium",
         variant === "secondary" && "border-b-2 border-foreground px-0 py-2",
