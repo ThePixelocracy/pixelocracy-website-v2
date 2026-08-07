@@ -10,6 +10,8 @@ type CaseStudyResultV4Props = {
   paragraphs: string[];
   liveUrl: string;
   liveLabel: string;
+  /** False for a project with no live public product to link to (e.g. an internal platform) — routes to liveUrl in the same tab instead. */
+  liveExternal?: boolean;
 };
 
 /**
@@ -19,7 +21,14 @@ type CaseStudyResultV4Props = {
  * qualitative outcome is asserted here; no metric renders unless the
  * calling content genuinely has one.
  */
-export function CaseStudyResultV4({ eyebrow, heading, paragraphs, liveUrl, liveLabel }: CaseStudyResultV4Props) {
+export function CaseStudyResultV4({
+  eyebrow,
+  heading,
+  paragraphs,
+  liveUrl,
+  liveLabel,
+  liveExternal = true,
+}: CaseStudyResultV4Props) {
   const prefersReducedMotion = useReducedMotion();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
@@ -54,7 +63,7 @@ export function CaseStudyResultV4({ eyebrow, heading, paragraphs, liveUrl, liveL
           ))}
         </div>
 
-        <V4Button href={liveUrl} variant="primary" className="w-fit" external>
+        <V4Button href={liveUrl} variant="primary" className="w-fit" external={liveExternal}>
           {liveLabel}
         </V4Button>
       </div>

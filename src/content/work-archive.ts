@@ -63,6 +63,7 @@ const additionalProjects: ArchiveProject[] = [
       "An integrated e-booking platform connecting patients with certified specialists for real-time appointment scheduling, secure messaging, and digital consultations.",
     image: "/case-studies/hhg-thumbnail.png",
     industry: "Healthcare",
+    route: "/work/hhg",
   },
   {
     slug: "aegean-motorway",

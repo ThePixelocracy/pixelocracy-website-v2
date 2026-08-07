@@ -14,19 +14,25 @@ type CaseStudyPlatformV4Props = {
   heading: string;
   paragraph: string;
   columns: PlatformColumn[];
-  builtWith: string[];
-  image: string;
-  imageAlt: string;
+  /** Omit when no verified tool/technology names exist for this project. */
+  builtWith?: string[];
+  /** Omit when no real product screenshot exists — the column grid then runs full-width rather than beside an empty slot. */
+  image?: string;
+  imageAlt?: string;
 };
 
 /**
- * Shared "the platform" section — a real product screenshot beside the
- * category/tools breakdown, on the same dark full-bleed background V4
- * already uses for its darkest beat (`PillarIncludedV4`). The screenshot
- * renders with `object-contain` at its native aspect ratio rather than a
- * cropped `object-cover`: it's a real UI, not photography, so nothing is
- * trimmed out of frame. Visible at full opacity from mount — only a
- * non-hiding scale-settle, per the /work archive fix.
+ * Shared "the platform" section — the category/capability breakdown on the
+ * same dark full-bleed background V4 already uses for its darkest beat
+ * (`PillarIncludedV4`), with an optional real product screenshot beside it.
+ * The screenshot (when supplied) renders with `object-contain` at its
+ * native aspect ratio rather than a cropped `object-cover`: it's a real UI,
+ * not photography, so nothing is trimmed out of frame. `image`/`builtWith`
+ * are both optional — some projects (e.g. HHG) have no real screenshot and
+ * no verified tool names, and the section still needs to read as complete
+ * rather than leaving an empty slot for content that doesn't exist.
+ * Visible at full opacity from mount — only a non-hiding scale-settle, per
+ * the /work archive fix.
  */
 export function CaseStudyPlatformV4({
   eyebrow,
@@ -57,25 +63,27 @@ export function CaseStudyPlatformV4({
         </div>
 
         <div className="mt-14 flex flex-col gap-14 lg:flex-row lg:items-start lg:gap-16">
-          <motion.div
-            initial={{ scale: 1.04 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: fast ?? 0.8, ease: "easeOut" }}
-            className="relative mx-auto aspect-[607/922] w-full max-w-xs shrink-0 overflow-hidden lg:mx-0"
-          >
-            <Image
-              src={image}
-              alt={imageAlt}
-              fill
-              sizes="(min-width: 1024px) 320px, 60vw"
-              loading="eager"
-              className="object-contain"
-            />
-          </motion.div>
+          {image && (
+            <motion.div
+              initial={{ scale: 1.04 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: fast ?? 0.8, ease: "easeOut" }}
+              className="relative mx-auto aspect-[607/922] w-full max-w-xs shrink-0 overflow-hidden lg:mx-0"
+            >
+              <Image
+                src={image}
+                alt={imageAlt ?? ""}
+                fill
+                sizes="(min-width: 1024px) 320px, 60vw"
+                loading="eager"
+                className="object-contain"
+              />
+            </motion.div>
+          )}
 
           <div className="flex w-full flex-col gap-14">
-            <div className="grid gap-10 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
+            <div className={`grid gap-10 sm:grid-cols-2 sm:gap-8 ${image ? "lg:grid-cols-4" : "lg:grid-cols-4 lg:gap-12"}`}>
               {columns.map((column, index) => (
                 <motion.div
                   key={column.heading}
@@ -91,14 +99,16 @@ export function CaseStudyPlatformV4({
               ))}
             </div>
 
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
-              <span className="font-mono text-xs tracking-[0.14em] text-white/50 uppercase">Built with</span>
-              {builtWith.map((tool) => (
-                <span key={tool} className="rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white">
-                  {tool}
-                </span>
-              ))}
-            </div>
+            {builtWith && builtWith.length > 0 && (
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+                <span className="font-mono text-xs tracking-[0.14em] text-white/50 uppercase">Built with</span>
+                {builtWith.map((tool) => (
+                  <span key={tool} className="rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

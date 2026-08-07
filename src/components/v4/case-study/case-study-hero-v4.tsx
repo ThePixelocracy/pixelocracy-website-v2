@@ -20,6 +20,8 @@ type CaseStudyHeroV4Props = {
   imageAlt: string;
   liveUrl: string;
   liveLabel: string;
+  /** False for a project with no live public product to link to (e.g. an internal platform) — routes to liveUrl in the same tab instead. */
+  liveExternal?: boolean;
 };
 
 /**
@@ -39,6 +41,7 @@ export function CaseStudyHeroV4({
   imageAlt,
   liveUrl,
   liveLabel,
+  liveExternal = true,
 }: CaseStudyHeroV4Props) {
   const prefersReducedMotion = useReducedMotion();
   const [mounted, setMounted] = useState(false);
@@ -96,7 +99,7 @@ export function CaseStudyHeroV4({
             viewport={{ once: true, amount: 0 }}
             transition={{ duration: fast ?? 0.6, delay: fast ? 0 : 0.32, ease: "easeOut" }}
           >
-            <V4Button href={liveUrl} variant="primary" className="w-fit" external>
+            <V4Button href={liveUrl} variant="primary" className="w-fit" external={liveExternal}>
               {liveLabel}
             </V4Button>
           </motion.div>
