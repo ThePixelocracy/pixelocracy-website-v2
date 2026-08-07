@@ -76,6 +76,14 @@ const sharedObjectionsIntro = [
   "And because we've navigated each of these before, we know exactly where to start.",
 ];
 
+/**
+ * Verbatim from `knowledge/01_company.md` ("Who We Work With") — company-wide
+ * fact, not specific to any one pillar, so it's a shared constant rather than
+ * duplicated per pillar entry.
+ */
+export const sharedWhoWeWorkWith =
+  "We partner with ambitious organizations that view technology as a strategic business capability.";
+
 export const pillarPages: Record<string, PillarPageContent> = {
   "strategy-advisory": {
     number: 1,
