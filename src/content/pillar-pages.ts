@@ -259,6 +259,10 @@ export const pillarPages: Record<string, PillarPageContent> = {
           quote:
             "We have many fragmented datasets. Still no way to combine them and extract insights in a sustainable manner.",
         },
+        {
+          quote:
+            "We are highly dependent on a single AI model, tool, or provider. If their price changes, our operating model collapses. We need a resilient AI strategy.",
+        },
       ],
     },
     experience: {

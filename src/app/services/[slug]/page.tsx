@@ -8,12 +8,15 @@ type PillarRouteParams = {
   slug: string;
 };
 
-// "strategy-advisory" is excluded — it now has its own static route at
-// src/app/services/strategy-advisory/page.tsx (the V4 pillar-page template),
-// which takes routing precedence over this dynamic segment. Generating it
-// here too would conflict with that static route at build time.
+// "strategy-advisory" and "data-ai-automation" are excluded — each now has
+// its own static route (src/app/services/strategy-advisory/page.tsx,
+// src/app/services/data-ai-automation/page.tsx), which takes routing
+// precedence over this dynamic segment. Generating them here too would
+// conflict with those static routes at build time.
+const V4_PILLAR_SLUGS = new Set(["strategy-advisory", "data-ai-automation"]);
+
 export function generateStaticParams(): PillarRouteParams[] {
-  return pillars.filter((pillar) => pillar.slug !== "strategy-advisory").map((pillar) => ({ slug: pillar.slug }));
+  return pillars.filter((pillar) => !V4_PILLAR_SLUGS.has(pillar.slug)).map((pillar) => ({ slug: pillar.slug }));
 }
 
 async function getPillar(slug: string) {
