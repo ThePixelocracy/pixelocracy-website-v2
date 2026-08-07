@@ -12,7 +12,12 @@ type PillarRouteParams = {
 // page.tsx), which takes routing precedence over this dynamic segment.
 // Generating them here too would conflict with those static routes at
 // build time.
-const V4_PILLAR_SLUGS = new Set(["strategy-advisory", "data-ai-automation", "engineering-security"]);
+const V4_PILLAR_SLUGS = new Set([
+  "strategy-advisory",
+  "data-ai-automation",
+  "engineering-security",
+  "digital-products",
+]);
 
 export function generateStaticParams(): PillarRouteParams[] {
   return pillars.filter((pillar) => !V4_PILLAR_SLUGS.has(pillar.slug)).map((pillar) => ({ slug: pillar.slug }));
