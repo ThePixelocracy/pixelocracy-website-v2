@@ -17,6 +17,7 @@ const V4_ROUTES = new Set([
   "/about",
   "/contact",
   "/work",
+  "/insights",
 ]);
 
 /**
@@ -24,12 +25,14 @@ const V4_ROUTES = new Set([
  * /v4 to the real homepage at / — so / now gets <NavigationV4/>. All five
  * V4 pillar pages (Strategy & Advisory, Data AI & Automation, Engineering
  * & Security, Digital Products & UI/UX, Capability Building), About,
- * Contact, and the new Work archive join it here. Every other existing
- * route (V2, V3) keeps the exact same <Navigation/> as before; this is
- * additive, not a redesign of those pages.
+ * Contact, the Work archive, and the new Insights section join it here.
+ * Every other existing route (V2, V3) keeps the exact same <Navigation/>
+ * as before; this is additive, not a redesign of those pages.
  */
 export function SiteHeader() {
   const pathname = usePathname();
-  const isV4Route = Boolean(pathname) && (V4_ROUTES.has(pathname!) || pathname!.startsWith("/work/"));
+  const isV4Route =
+    Boolean(pathname) &&
+    (V4_ROUTES.has(pathname!) || pathname!.startsWith("/work/") || pathname!.startsWith("/insights/"));
   return isV4Route ? <NavigationV4 /> : <Navigation />;
 }
